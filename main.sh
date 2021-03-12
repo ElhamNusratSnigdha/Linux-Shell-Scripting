@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "(1)"
+echo "(1)Value printing"
 a=5
 b="my name"
 
@@ -14,18 +14,18 @@ echo a echo $a
 
 
 
-echo "(2)"
+echo "(2)Taking input"
 echo "Enter a name:"
 #"read" takes input
-#"name" is a variable
+#"naam" is a variable
 read naam
 echo "The name of the user is $naam"
 
 
 
 
-echo "(3)"
-#Arithmetic calculations
+echo "(3)Arithmetic calculations"
+
 x=4
 y=2
 echo $x+$y
@@ -50,8 +50,9 @@ echo $t
 
 
 
-echo "(4)"
-#if-else condition in bash
+
+echo "(4)if-else condition"
+
 echo "Enter a number: "
 read u
 
@@ -67,8 +68,8 @@ else
 fi
 #"fi" indicates the ending of "if"
 
-echo "(5)"
-#example
+
+echo "(5)Example"
 echo "Enter a name:"
 read filename
 
@@ -80,8 +81,8 @@ else
   echo "Not a ffile or directory"
 fi
 
-echo "(6)"
-#switch case
+
+echo "(6)Switch case"
 echo "Enter a name:"
 read name
 
@@ -91,22 +92,18 @@ case $name in
   "Elham") echo "Love from Elham";
            echo "Goodnight";;
   *) echo "Something else"
-  # * everything else
+  # * used for everything else
 esac
-#"esac" inding of case
+#"esac" ending of case
 
 
-
-echo "(7)"
-#For-loops
-#traditional for-loop
+echo "(7)for-loops: traditional for-loop"
 for ((i=0; i<10; i++))
 do
   echo $i
 done
 
-echo "(8)"
-#enhance for-loop, fr-loop in python
+echo "(8)enhance for-loop, for-loop in python"
 my_list=(h j k l)
 
 for i in ${my_list[*]};
@@ -114,8 +111,8 @@ do
   echo $i
 done
 
-echo "(9)"
-#while-loop
+
+echo "(9)while-loop"
 i=0
 
 while [ $i -lt 10 ];
@@ -124,13 +121,11 @@ do
   i=$(($i+1))
 done
 
-echo "(10)"
-#until-loop
+echo "(10)until-loop"
 
 
 
-echo "(11)"
-#command-line arguments
+echo "(11)Command-line arguments"
 echo "Argument number 1: "$1
 echo "Argument number 0: "$0
 echo "Argument number 4: "$4
@@ -139,8 +134,7 @@ echo "All the arguments: "$*
 
 
 
-echo "(12)"
-#Functions in bash
+echo "(12)Functions"
 
 function clock(){
   echo "tic toc, tic toc"
@@ -157,7 +151,7 @@ bell(){
 bell
 echo $g "outside the house"
 
-#replaces previous value in same variable 
+#replaces previous value with same variable 
 g="vampire"
 echo "Hi" $g
 
