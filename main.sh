@@ -82,6 +82,9 @@ else
 fi
 
 
+
+
+
 echo "(6)Switch case"
 echo "Enter a name:"
 read name
@@ -97,11 +100,17 @@ esac
 #"esac" ending of case
 
 
+
+
+
 echo "(7)for-loops: traditional for-loop"
 for ((i=0; i<10; i++))
 do
   echo $i
 done
+
+
+
 
 echo "(8)enhance for-loop, for-loop in python"
 my_list=(h j k l)
@@ -110,6 +119,8 @@ for i in ${my_list[*]};
 do
   echo $i
 done
+
+
 
 
 echo "(9)while-loop"
@@ -121,7 +132,12 @@ do
   i=$(($i+1))
 done
 
+
+
+
 echo "(10)until-loop"
+
+
 
 
 
@@ -131,6 +147,8 @@ echo "Argument number 0: "$0
 echo "Argument number 4: "$4
 echo "Total arguments: " $#
 echo "All the arguments: "$*
+
+
 
 
 
@@ -179,3 +197,21 @@ returnMything(){
 }
 returnMything
 echo $?"$"
+
+
+
+
+
+echo "(13)String Length"
+string="Snigdha"
+echo ${#string}
+
+
+
+
+echo "(14)Substring Extraction"
+#${string:position_and rest of it}
+echo ${string:5}
+#${string:position:go_till_this_length}
+echo ${string:0:2}
+
